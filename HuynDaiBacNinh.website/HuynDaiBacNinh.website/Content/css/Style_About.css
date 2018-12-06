@@ -1,0 +1,29 @@
+﻿.body{
+    font-family:'ModernH-EcoLight';
+}
+body .row {
+    background-color: #ecf0f1;
+}
+body .header-top{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+    #hot-line{
+        font-size:12pt;
+        padding-top:10px;
+        font-weight:bold;
+    }
+/*mobile*/
+@media screen and (max-width:320px){
+    body .row{
+        max-width:200%;
+    }
+    body .header-top .logo img{
+        width:230%;
+        height:auto;
+    }
+    body .icons {
+        display: none;
+    }
+}
+@media screen and (max-width:)

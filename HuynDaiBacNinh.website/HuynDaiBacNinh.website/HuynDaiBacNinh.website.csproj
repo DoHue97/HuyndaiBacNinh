@@ -137,6 +137,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\Style_About.css" />
     <Content Include="Content\img\avante.png" />
     <Content Include="Content\img\banner.png" />
     <Content Include="Content\img\banner_car.png" />
@@ -152,6 +153,8 @@
     <Content Include="Content\img\icon_google_plus.png" />
     <Content Include="Content\img\icon_youtube.png" />
     <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\next.png" />
+    <Content Include="Content\img\next_icon.png" />
     <Content Include="Content\img\santaFe.png" />
     <Content Include="Content\img\santaFe_copy.png" />
     <Content Include="Content\img\sonata.png" />
@@ -190,7 +193,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\css\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
