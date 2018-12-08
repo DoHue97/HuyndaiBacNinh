@@ -1,0 +1,857 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang chủ</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="~/Content/css/ModernH-Bold.v1.0.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/ModernH-EcoLight.v1.0.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/style.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/responsive.css">
+
+</head>
+<header></header>
+<body>
+    <!-- header -->
+    <div class="header-top">
+        <div class="container">
+            <div class="logo col-xs-6">
+                <img src="~/Content/img/logo.png">
+            </div>
+            <div class="icons col-xs-6">
+                <div class="item-icon col-xs-6">
+                    <a href=""><img src="~/Content/img/icon_1.png"></a>
+                    <a href=""><img src="~/Content/img/icon_2.png"></a>
+                    <a href=""><img src="~/Content/img/icon_3.png"></a>
+                </div>
+                <div class="hot-line col-xs-6">
+                    <p>Hotline: 0987 654 321</p>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="navbar-collapse col-xs-12 col-md-12 menu" id="menu">
+        <div class="navbar">
+            <span id="hot-line-copy" style="font-size: 15pt;color: red;font-weight: bold;float:left">0987 654 321</span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" onclick="showMenu()" data-target="#navbar-collapse-main">
+                @*<i class="fa fa-bars"></i>*@
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="container clearfix">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="javascript:;" class="menu-pr" onclick="showmenu(true)">Sản phẩm</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="test dropdown-toggle" data-toggle="collapse" aria-expanded="false" >Dịch vụ</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="">
+                                    Chính sách bảo hành
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    Phụ tùng &amp; phụ kiện
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    Bảo dưỡng định kỳ
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    Chăm sóc khách hàng
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    Cứu hộ giao thông
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    Hyundai Membership
+                                </a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Mua xe</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="">
+                                    Bảng giá
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    Dự toán chi phí
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    Hỗ trợ trả góp
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    Hướng dẫn thủ tục
+                                </a>
+
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Đăng ký lái thử</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Tin tức</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="">Tin đại lý</a></li>
+                            <li><a href="">Tin tức xe Hyundai</a></li>
+                            <li><a href="">Tin khuyến mại</a></li>
+                            <li><a href="">Công nghệ xe Hyundai</a></li>
+                            <li><a href="">Kỹ thuật &amp; tư vấn xe</a></li>
+                            <li><a href="">Đánh giá xe</a></li>
+                            <li><a href="">Tuyển dụng</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Về chúng tôi</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="">
+                                    Chính sách & Quy định
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    Giới thiệu chung
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    Thư ngỏ
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="">
+                                    Cơ cấu tổ chức
+                                </a>
+
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="show-menu">
+        <div id="show-menu" class=" container no-padding" style="display: none;">
+            <div class="col-sm-8 no-padding" style="width: 21%; height: 400px; background: #e8eaee;">
+                <ul class="nav nav-tabs">
+                    <li class="active" style="">
+                        <a data-toggle="tab" href="#0" style="">
+                            Tất cả
+                        </a>
+                    </li>
+                    <li class="" style="">
+                        <a data-toggle="tab" href="#1" style="">
+                            Xe du lịch
+                        </a>
+                    </li>
+                    <li class="" style="">
+                        <a data-toggle="tab" href="#2" style="">
+                            Xe SUV, xe MPV
+                        </a>
+                    </li>
+                    <li class="" style="">
+                        <a data-toggle="tab" href="#3" style="">
+                            Xe chuyên dụng
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="tab-content col-sm-8" style="overflow-y: scroll; width: 79%; height: 400px;">
+                <button type="button" class="close col-sm-12 margintop10 paddingright10 left" style="font-weight: bold; color: black; text-align: right" onclick="showmenu(false);">X</button>
+                <div id="0" class="tab-pane fade in active">
+
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/grand-i10">
+                            <img src="~/Content/img/grandi10.png" class="img-product-popup col-centered" alt="Grand i10">
+                            <div class="carname" style="text-align: center">Grand i10</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/grand-i10-sedan">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Grand i10 sedan">
+                            <div class="carname" style="text-align: center">Grand i10 sedan</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/accent-2018">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Accent 2018">
+                            <div class="carname" style="text-align: center">Accent 2018</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/elantra">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Elantra">
+                            <div class="carname" style="text-align: center">Elantra</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/elantra-sport">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Elantra Sport">
+                            <div class="carname" style="text-align: center">Elantra Sport</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/kona">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Kona">
+                            <div class="carname" style="text-align: center">Kona</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/tucson-2017">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Tucson 2017">
+                            <div class="carname" style="text-align: center">Tucson 2017</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/santa-fe">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="SantaFe">
+                            <div class="carname" style="text-align: center">SantaFe</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/solati">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Solati">
+                            <div class="carname" style="text-align: center">Solati</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/new-porter-150">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="NEW PORTER 150">
+                            <div class="carname" style="text-align: center">NEW PORTER 150</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/new-mighty-n250">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="New Mighty N250">
+                            <div class="carname" style="text-align: center">New Mighty N250</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/county">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="COUNTY 2017">
+                            <div class="carname" style="text-align: center">COUNTY 2017</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/universe">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="universe">
+                            <div class="carname" style="text-align: center">universe</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/hd700-1000-dau-keo">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="HD700-1000 Đầu kéo">
+                            <div class="carname" style="text-align: center">HD700-1000 Đầu kéo</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/hd270-tu-do">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="HD270 Tự đổ">
+                            <div class="carname" style="text-align: center">HD270 Tự đổ</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/hd270-tron-be-tong">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="HD270 TRỘN BÊ TÔNG">
+                            <div class="carname" style="text-align: center">HD270 TRỘN BÊ TÔNG</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/hd260-320">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="HD260-320">
+                            <div class="carname" style="text-align: center">HD260-320</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/hd210">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="HD210">
+                            <div class="carname" style="text-align: center">HD210</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/tucson">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Tucson 2016">
+                            <div class="carname" style="text-align: center">Tucson 2016</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/accent">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Accent">
+                            <div class="carname" style="text-align: center">Accent</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/accent-5-cua">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Accent 5 cửa">
+                            <div class="carname" style="text-align: center">Accent 5 cửa</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/i20-active">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="i20 Active">
+                            <div class="carname" style="text-align: center">i20 Active</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/sonata">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Sonata">
+                            <div class="carname" style="text-align: center">Sonata</div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-3 col-xs-6 product-popup">
+
+                        <a href="/vi/san-pham/creta">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Creta">
+                            <div class="carname" style="text-align: center">Creta</div>
+                        </a>
+
+                    </div>
+                </div>
+                <div id="1" class="tab-pane fade in">
+                    <div class="col-sm-3 col-xs-6  product-popup">
+                        <a href="/vi/san-pham/grand-i10">
+                            <img src="~/Content/img/grandi10.png" class="img-product-popup col-centered" alt="Grand i10">
+                            <div class="carname" style="text-align: center">Grand i10</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6  product-popup">
+                        <a href="/vi/san-pham/grand-i10-sedan">
+                            <img src="~/Content/img/grandi10.png" class="img-product-popup col-centered" alt="Grand i10 sedan">
+                            <div class="carname" style="text-align: center">Grand i10 sedan</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6  product-popup">
+                        <a href="/vi/san-pham/accent-2018">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Accent 2018">
+                            <div class="carname" style="text-align: center">Accent 2018</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6  product-popup">
+                        <a href="/vi/san-pham/elantra">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Elantra">
+                            <div class="carname" style="text-align: center">Elantra</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6  product-popup">
+                        <a href="/vi/san-pham/elantra-sport">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Elantra Sport">
+                            <div class="carname" style="text-align: center">Elantra Sport</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6  product-popup">
+                        <a href="/vi/san-pham/accent">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Accent">
+                            <div class="carname" style="text-align: center">Accent</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6  product-popup">
+                        <a href="/vi/san-pham/accent-5-cua">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Accent 5 cửa">
+                            <div class="carname" style="text-align: center">Accent 5 cửa</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6  product-popup">
+                        <a href="/vi/san-pham/i20-active">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="i20 Active">
+                            <div class="carname" style="text-align: center">i20 Active</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6  product-popup">
+                        <a href="/vi/san-pham/sonata">
+                            <img src="~/Content/img/sonata.png" class="img-product-popup col-centered" alt="Sonata">
+                            <div class="carname" style="text-align: center">Sonata</div>
+                        </a>
+                    </div>
+                </div>
+                <div id="2" class="tab-pane fade in">
+                    <div class="col-sm-3 col-xs-6  product-popup">
+                        <a href="/vi/san-pham/kona">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Kona">
+                            <div class="carname" style="text-align: center">Kona</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6  product-popup">
+                        <a href="/vi/san-pham/tucson-2017">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Tucson 2017">
+                            <div class="carname" style="text-align: center">Tucson 2017</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6  product-popup">
+                        <a href="/vi/san-pham/santa-fe">
+                            <img src="~/Content/img/santaFe.png" class="img-product-popup col-centered" alt="SantaFe">
+                            <div class="carname" style="text-align: center">SantaFe</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6  product-popup">
+                        <a href="/vi/san-pham/tucson">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Tucson 2016">
+                            <div class="carname" style="text-align: center">Tucson 2016</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6  product-popup">
+                        <a href="/vi/san-pham/creta">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Creta">
+                            <div class="carname" style="text-align: center">Creta</div>
+                        </a>
+                    </div>
+                </div>
+                <div id="3" class="tab-pane fade in">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="slider">
+        <div id="mySlider" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#mySlider" data-slide-to="0" class="active"></li>
+                <li data-target="#mySlider" data-slide-to="1"></li>
+                <li data-target="#mySlider" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="carousel-caption">
+                        <div class="note-slider col-xs-6">
+                            <strong style="font-size: 45.78pt;color: black">TUCSON</strong>
+                            <br>
+                            <span style="color: #666666;font-size: 20pt;">ĐÁNH THỨC MỌI GIÁC QUAN</span>
+                            <br>
+                            <br>
+                            <br>
+                            <span class="detail">
+                                Thiết kế tinh xảo với cảm hứng triết lý điêu khắc dòng chảy 2.0
+                                <br>
+                                Trang bị an toàn, tiện nghi hàng đầu
+                            </span>
+                            <br>
+                            <br>
+
+                            <span>
+                                <button type="button" style="background-color: blue;font-size: 14pt;text-align: center;">CHI TIẾT</button>
+                            </span>
+                        </div>
+                        <div class="img-slider col-xs-6">
+                            <img src="~/Content/img/banner_car.png">
+                        </div>
+                    </div>
+                    <img src="~/Content/img/banner.png" alt="~/Content.">
+                </div>
+                <div class="item">
+                    <div class="carousel-caption">
+                        <div class="note-slider col-xs-6">
+                            <strong style="font-size: 45.78pt;color: black">TUCSON</strong>
+                            <br>
+                            <span style="color: #666666;font-size: 20pt;">ĐÁNH THỨC MỌI GIÁC QUAN</span>
+                            <br>
+                            <br>
+                            <br>
+                            <span class="detail">
+                                Thiết kế tinh xảo với cảm hứng triết lý điêu khắc dòng chảy 2.0
+                                <br>
+                                Trang bị an toàn, tiện nghi hàng đầu
+                            </span>
+                            <br>
+                            <br>
+                            <span>
+                                <button type="button" style="background-color: blue;font-size: 14pt;text-align: center;">CHI TIẾT</button>
+                            </span>
+                        </div>
+                        <div class="img-slider col-xs-6">
+                            <img src="~/Content/img/banner_car.png">
+                        </div>
+                    </div>
+                    <img src="~/Content/img/banner.png" alt="">
+                </div>
+                <div class="item">
+                    <div class="carousel-caption">
+                        <div class="note-slider col-xs-6">
+                            <strong style="font-size: 45.78pt;color: black">TUCSON</strong>
+                            <br>
+                            <span style="color: #666666;font-size: 20pt;">ĐÁNH THỨC MỌI GIÁC QUAN</span>
+                            <br>
+                            <br>
+                            <br>
+                            <span class="detail">
+                                Thiết kế tinh xảo với cảm hứng triết lý điêu khắc dòng chảy 2.0
+                                <br>
+                                Trang bị an toàn, tiện nghi hàng đầu
+                            </span>
+                            <br>
+                            <br>
+                            <span>
+                                <button type="button" class="btn-detail" style="">CHI TIẾT</button>
+                            </span>
+                        </div>
+                        <div class="img-slider col-xs-6">
+                            <img src="~/Content/img/banner_car.png">
+                        </div>
+                    </div>
+                    <img src="~/Content/img/banner.png" alt="">
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <a class="left " href="#mySlider" role="button" data-slide="prev">
+
+                </a>
+                <a class="right " href="#mySlider" role="button" data-slide="next">
+
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="clearfix"></div> -->
+    <div class="slider_products">
+        <p style="font-size: 19pt;color: #949494;text-align: center;font-weight:bold">Sản phẩm nổi bật</p>
+        <br>
+        <div id="myProducts" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myProducts" data-slide-to="0" class="active"></li>
+                <li data-target="#myProducts" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="item_pro col-xs-3">
+                            <a href="">
+                                <img src="~/Content/img/sonata.png" class="img-responsive">
+                                <br>
+                                <span>Sonnata</span>
+                            </a>
+                        </div>
+                        <div class="item_pro col-xs-3">
+                            <a href="">
+                                <img src="~/Content/img/avante.png" class="img-responsive">
+                                <br>
+                                <span>Avante</span>
+                            </a>
+
+                        </div>
+                        <div class="item_pro col-xs-3">
+                            <a href="">
+                                <img src="~/Content/img/santaFe.png" class="img-responsive">
+                                <br>
+                                <span>SantaFe</span>
+                            </a>
+
+                        </div>
+                        <div class="item_pro col-xs-3">
+                            <a href="">
+                                <img src="~/Content/img/grandi10.png" class="img-responsive">
+                                <br>
+                                <span>Grand i10</span>
+                            </a>
+                        </div>
+                        <div class="item_pro col-xs-3">
+                            <a href="">
+                                <img src="~/Content/img/santaFe_copy.png" class="img-responsive">
+                                <br>
+                                <span>SantaFe</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="item_pro col-xs-3">
+                            <a href="">
+                                <img src="~/Content/img/sonata.png" class="img-responsive">
+                                <br>
+                                <span>Sonnata</span>
+                            </a>
+                        </div>
+                        <div class="item_pro col-xs-3">
+                            <a href="">
+                                <img src="~/Content/img/avante.png" class="img-responsive">
+                                <br>
+                                <span>Avante</span>
+                            </a>
+
+                        </div>
+                        <div class="item_pro col-xs-3">
+                            <a href="">
+                                <img src="~/Content/img/santaFe.png" class="img-responsive">
+                                <br>
+                                <span>SantaFe</span>
+                            </a>
+
+                        </div>
+                        <div class="item_pro col-xs-3">
+                            <a href="">
+                                <img src="~/Content/img/grandi10.png" class="img-responsive">
+                                <br>
+                                <span>Grand i10</span>
+                            </a>
+                        </div>
+                        <div class="item_pro col-xs-3">
+                            <a href="">
+                                <img src="~/Content/img/santaFe_copy.png" class="img-responsive">
+                                <br>
+                                <span>SantaFe</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <a class="left " href="#myProducts" role="button" data-slide="prev">
+                </a>
+                <a class="right " href="#myProducts" role="button" data-slide="next">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="news container">
+        <div class="img_news">
+            <img src="~/Content/img/hw90712.png">
+        </div>
+        <div class="content_news">
+            <p class="title_news">Huyndai i20 Active chính thức ra mắt thị trường Việt Nam</p>
+            <span>Tin tức chung, 8/3/2015</span>
+            <br>
+            <p>Huyndai Thành Công chính thức giới thiệu i20 Active đến thị trường Việt Nam-I20 sở hữu thiết kế cùng những tính năng</p>
+            <hr style="border-top: 1pt solid black">
+            <p>Huyndai i20 Active chính thức ra mắt thị trường Việt Nam</p>
+            <span>Tin tức chung, 8/3/2015</span>
+            <hr style="border-top: 1pt solid black">
+            <p>Huyndai i20 Active chính thức ra mắt thị trường Việt Nam</p>
+            <span>Tin tức chung, 8/3/2015</span>
+            <hr style="border-top: 1pt solid black">
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="container config_gr">
+        <span>Dịch vụ chăm sóc, bán hàng chuyên nghiệp phục vụ 24/7</span>
+        <div class="row">
+            <div class="config">
+                <a href="">
+                    <img src="~/Content/img/config_1.png" class="img-responsive">
+                    <span class="title_config">Chương trình dịch vụ</span>
+                </a>
+            </div>
+            <div class="config">
+                <a href="">
+                    <img src="~/Content/img/config_2.png" class="img-responsive">
+                    <span class="title_config">Chính sách bảo hành</span>
+                </a>
+            </div>
+            <div class="config">
+                <a href="">
+                    <img src="~/Content/img/config_3.png" class="img-responsive">
+                    <span class="title_config">Phụ tùng & phụ kiện</span>
+                </a>
+            </div>
+        </div>
+        <p>Hyundai Bắc Ninh  .Tổ 54, Tp.Bắc Ninh, </p>
+        <hr style="border-top: 1pt solid black">
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="footer_top container">
+        <div class="item_footer">
+            <p>Sản phẩm</p>
+            <a href="">Xe du lịch</a><br>
+            <a href="">Xe thể thao đa dụng và tải nhẹ</a><br>
+            <a href="">Xe chuyên dụng</a><br>
+        </div>
+        <div class="item_footer">
+            <p>Dịch vụ</p>
+            <a href="">Chương trình dịch vụ</a><br>
+            <a href="">Chính sách bảo hành</a><br>
+            <a href="">Phụ tùng & phụ kiện</a><br>
+            <a href="">Chăm sóc khách hàng</a><br>
+        </div>
+        <div class="item_footer">
+            <p>Tin tức</p>
+            <a href="">Tin tức chung</a><br>
+            <a href="">Tin đại lý</a><br>
+            <a href="">Tin khuyến mại</a><br>
+            <a href="">Tuyển dụng</a><br>
+        </div>
+        <div class="item_footer">
+            <p>Kinh nghiệm lái xe</p>
+            <a href="">Hướng dẫn</a><br>
+            <a href="">Kỹ năng cần biết</a><br>
+            <a href="">Quy tắc cơ bản</a><br>
+        </div>
+        <!-- mobile footer item -->
+
+    </div>
+
+    <div class="item_mobile_footer container">
+        <a href="">Sản phẩm</a>
+        <a href="">Dịch vụ</a>
+        <a href="">Tin tức</a>
+        <a href="">Kinh nghiệm lái xe</a>
+    </div>
+
+    </div>
+    <div class="clearfix"></div>
+    <footer>
+        <div class="container">
+            <p>&copy; Copyright 2015 huyndai bắc ninh</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function showMenu() {
+            var x = document.getElementById("menu");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+    </script>
+    <script>
+
+        var i = 0;
+        var showmenu = function (s) {
+
+            $('#show-menu').eq(0).slideToggle(50);
+            if (i == 0) {
+                $('.menu-pr').addClass('active');
+                i = 1;
+            }
+            else {
+                $('.menu-pr').removeClass('active');
+                i = 0;
+            }
+
+        };
+
+
+    </script>
+    <!--menu đa cấp trên moblie-->
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-menu a.test').on("click", function (e) {
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+    </script>
+    <script>
+        $('.menu .navbar .nav li.dropdown a.dropdown-toggle').on('click', function (e) {
+            var $el = $(this);
+            var $parent = $(this).offsetParent(".dropdown-menu");
+            $(this).parent("li").toggleClass('open');
+            if (!$parent.parent().hasClass('nav')) {
+                $el.next().css({ "top": $el[0].offsetTop, "left": $parent.outerWidth() - 4 });
+            }
+            $('.menu .navbar .nav .open li.dropdown').not($(this).parents("li")).removeClass("open");
+            return false;
+        });
+    </script>
+</body>
+</html>
