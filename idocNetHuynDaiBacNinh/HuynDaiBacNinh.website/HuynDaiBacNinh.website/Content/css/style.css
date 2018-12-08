@@ -38,15 +38,17 @@ body {
         font-weight: bold;
     }
 
-#hot-line-copy {
+    #hot-line-copy {
     display: none;
 }
 /*menu*/
+
 .menu .responsive {
     display: none;
 }
 
 .menu {
+    width:100%;
     font-family: -webkit-body;
     border-bottom: 1pt solid #d6dbdc;
     height: auto;
@@ -55,14 +57,17 @@ body {
     .menu .navbar .container .nav {
         padding-left: 200px;
         list-style-type: none;
-        padding-top: 20px;
+        
     }
-
+    .menu .navbar{
+        margin:0;
+    }
     .menu .nav li {
         float: left;
     }
 
         .menu .nav li a {
+            border-bottom: 2px solid transparent;
             padding-left: 25px;
             font-weight: bold;
             font-size: 12pt;
@@ -80,7 +85,7 @@ body {
     }
 
         .menu .nav .dropdown-menu li {
-            background-color: aliceblue;
+            background-color: white;
             float: none;
         }
 
@@ -88,6 +93,7 @@ body {
                 text-transform: inherit;
                 font-size: 13pt;
                 font-weight: 400;
+                border-bottom: solid 1px #eee;
             }
 
             .menu .nav .dropdown-menu li > a:hover {
@@ -122,6 +128,7 @@ body {
     line-height: 53px;
     padding: 0;
     padding-left: 45px;
+    font-weight:bold;
 }
 
 .show-menu .nav-tabs > li {
@@ -316,7 +323,7 @@ body {
 
     .config_gr p {
         text-align: left;
-        padding-left: 90px;
+        padding-left: 20px;
         font-family: -webkit-body;
     }
 
