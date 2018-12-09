@@ -17,9 +17,9 @@
             <div class="item active">
                 <div class="carousel-caption">
                     <div class="note-slider col-xs-6">
-                        <strong style="font-size: 45.78pt;color: black">TUCSON</strong>
+                        <strong class="modernhbold" style="font-size: 45.78pt;color: black;">TUCSON</strong>
                         <br>
-                        <span style="color: #666666;font-size: 20pt;">ĐÁNH THỨC MỌI GIÁC QUAN</span>
+                        <span class="modernhbold" style="color: #666666;font-size: 20pt;">ĐÁNH THỨC MỌI GIÁC QUAN</span>
                         <br>
                         <br>
                         <br>
@@ -32,33 +32,7 @@
                         <br>
 
                         <span>
-                            <button type="button" style="background-color: blue;font-size: 14pt;text-align: center;">CHI TIẾT</button>
-                        </span>
-                    </div>
-                    <div class="img-slider col-xs-6">
-                        <img src="~/Content/img/banner_car.png">
-                    </div>
-                </div>
-                <img src="~/Content/img/banner.png" alt="~/Content.">
-            </div>
-            <div class="item">
-                <div class="carousel-caption">
-                    <div class="note-slider col-xs-6">
-                        <strong style="font-size: 45.78pt;color: black">TUCSON</strong>
-                        <br>
-                        <span style="color: #666666;font-size: 20pt;">ĐÁNH THỨC MỌI GIÁC QUAN</span>
-                        <br>
-                        <br>
-                        <br>
-                        <span class="detail">
-                            Thiết kế tinh xảo với cảm hứng triết lý điêu khắc dòng chảy 2.0
-                            <br>
-                            Trang bị an toàn, tiện nghi hàng đầu
-                        </span>
-                        <br>
-                        <br>
-                        <span>
-                            <button type="button" style="background-color: blue;font-size: 14pt;text-align: center;">CHI TIẾT</button>
+                            <button type="button" class="btn-detail">CHI TIẾT</button>
                         </span>
                     </div>
                     <div class="img-slider col-xs-6">
@@ -70,9 +44,9 @@
             <div class="item">
                 <div class="carousel-caption">
                     <div class="note-slider col-xs-6">
-                        <strong style="font-size: 45.78pt;color: black">TUCSON</strong>
+                        <strong class="modernhbold" style="font-size: 45.78pt;color: black;">TUCSON</strong>
                         <br>
-                        <span style="color: #666666;font-size: 20pt;">ĐÁNH THỨC MỌI GIÁC QUAN</span>
+                        <span class="modernhbold" style="color: #666666;font-size: 20pt;">ĐÁNH THỨC MỌI GIÁC QUAN</span>
                         <br>
                         <br>
                         <br>
@@ -83,8 +57,36 @@
                         </span>
                         <br>
                         <br>
+
                         <span>
-                            <button type="button" class="btn-detail" style="">CHI TIẾT</button>
+                            <button type="button" class="btn-detail">CHI TIẾT</button>
+                        </span>
+                    </div>
+                    <div class="img-slider col-xs-6">
+                        <img src="~/Content/img/banner_car.png">
+                    </div>
+                </div>
+                <img src="~/Content/img/banner.png" alt="">
+            </div>
+            <div class="item">
+                <div class="carousel-caption">
+                    <div class="note-slider col-xs-6">
+                        <strong class="modernhbold" style="font-size: 45.78pt;color: black;">TUCSON</strong>
+                        <br>
+                        <span class="modernhbold" style="color: #666666;font-size: 20pt;">ĐÁNH THỨC MỌI GIÁC QUAN</span>
+                        <br>
+                        <br>
+                        <br>
+                        <span class="detail">
+                            Thiết kế tinh xảo với cảm hứng triết lý điêu khắc dòng chảy 2.0
+                            <br>
+                            Trang bị an toàn, tiện nghi hàng đầu
+                        </span>
+                        <br>
+                        <br>
+
+                        <span>
+                            <button type="button" class="btn-detail">CHI TIẾT</button>
                         </span>
                     </div>
                     <div class="img-slider col-xs-6">
@@ -108,52 +110,57 @@
 </div>
 <!-- <div class="clearfix"></div> -->
 <div class="slider_products">
-    <p style="font-size: 19pt;color: #949494;text-align: center;font-weight:bold">Sản phẩm nổi bật</p>
+    <p style="font-size: 19pt;color: #949494;text-align: center;font-weight:bold;font-family:ModernHBold">Sản phẩm nổi bật</p>
     <br>
     <div id="myProducts" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
+        @*<ol class="carousel-indicators">
             <li data-target="#myProducts" data-slide-to="0" class="active"></li>
             <li data-target="#myProducts" data-slide-to="1"></li>
-        </ol>
+        </ol>*@
         <div class="carousel-inner">
             <div class="item active">
                 <div class="row">
                     <div class="item_pro col-xs-3">
                         <a href="">
                             <img src="~/Content/img/sonata.png" class="img-responsive">
-                            <br>
-                            <span>Sonnata</span>
+                            
+                            <span class="car_name">Sonnata</span><br />
+                            <span class="slogan">Đẳng cấp doanh nhân tiên phong</span>
                         </a>
                     </div>
                     <div class="item_pro col-xs-3">
                         <a href="">
                             <img src="~/Content/img/avante.png" class="img-responsive">
-                            <br>
-                            <span>Avante</span>
+                            
+                            <span class="car_name">Avante</span><br />
+                            <span class="slogan">Sự lựa chọn đầu tiên và mãi mãi</span>
                         </a>
 
                     </div>
                     <div class="item_pro col-xs-3">
                         <a href="">
                             <img src="~/Content/img/santaFe.png" class="img-responsive">
-                            <br>
-                            <span>SantaFe</span>
+                            
+                            <span class="car_name">SantaFe</span><br />
+                            <span class="slogan">Kiêu hãnh dẫn đầu</span>
                         </a>
 
                     </div>
                     <div class="item_pro col-xs-3">
                         <a href="">
                             <img src="~/Content/img/grandi10.png" class="img-responsive">
-                            <br>
-                            <span>Grand i10</span>
+                            
+                            <span class="car_name">Grand i10</span><br />
+                            <span class="slogan">Nhấn nút khởi động cuộc sống</span>
                         </a>
                     </div>
                     <div class="item_pro col-xs-3">
                         <a href="">
                             <img src="~/Content/img/santaFe_copy.png" class="img-responsive">
-                            <br>
-                            <span>SantaFe</span>
+                            
+                            <span class="car_name">SantaFe</span><br />
+                            <span class="slogan">Kiêu hãnh dẫn đầu</span>
                         </a>
                     </div>
                 </div>
@@ -163,38 +170,43 @@
                     <div class="item_pro col-xs-3">
                         <a href="">
                             <img src="~/Content/img/sonata.png" class="img-responsive">
-                            <br>
-                            <span>Sonnata</span>
+
+                            <span class="car_name">Sonnata</span><br />
+                            <span class="slogan">Đẳng cấp doanh nhân tiên phong</span>
                         </a>
                     </div>
                     <div class="item_pro col-xs-3">
                         <a href="">
                             <img src="~/Content/img/avante.png" class="img-responsive">
-                            <br>
-                            <span>Avante</span>
+
+                            <span class="car_name">Avante</span><br />
+                            <span class="slogan">Sự lựa chọn đầu tiên và mãi mãi</span>
                         </a>
 
                     </div>
                     <div class="item_pro col-xs-3">
                         <a href="">
                             <img src="~/Content/img/santaFe.png" class="img-responsive">
-                            <br>
-                            <span>SantaFe</span>
+
+                            <span class="car_name">SantaFe</span><br />
+                            <span class="slogan">Kiêu hãnh dẫn đầu</span>
                         </a>
 
                     </div>
                     <div class="item_pro col-xs-3">
                         <a href="">
                             <img src="~/Content/img/grandi10.png" class="img-responsive">
-                            <br>
-                            <span>Grand i10</span>
+
+                            <span class="car_name">Grand i10</span><br />
+                            <span class="slogan">Nhấn nút khởi động cuộc sống</span>
                         </a>
                     </div>
                     <div class="item_pro col-xs-3">
                         <a href="">
                             <img src="~/Content/img/santaFe_copy.png" class="img-responsive">
-                            <br>
-                            <span>SantaFe</span>
+
+                            <span class="car_name">SantaFe</span><br />
+                            <span class="slogan">Kiêu hãnh dẫn đầu</span>
                         </a>
                     </div>
                 </div>
@@ -211,46 +223,46 @@
 <div class="clearfix"></div>
 <div class="news container">
     <div class="img_news">
-        <img src="~/Content/img/hw90712.png">
+        <button type="button" class="btn-news">Tin tức </button>
     </div>
     <div class="content_news">
         <p class="title_news">Huyndai i20 Active chính thức ra mắt thị trường Việt Nam</p>
         <span>Tin tức chung, 8/3/2015</span>
         <br>
         <p>Huyndai Thành Công chính thức giới thiệu i20 Active đến thị trường Việt Nam-I20 sở hữu thiết kế cùng những tính năng</p>
-        <hr style="border-top: 1pt solid black">
+        <hr style="border-top: 1pt solid #a6aaab">
+        <p>Huyndai i20 Active chính thức ra mắt thị trường Việt Nam</p>
+        <hr style="border-top: 1pt solid #a6aaab">
+        
         <p>Huyndai i20 Active chính thức ra mắt thị trường Việt Nam</p>
         <span>Tin tức chung, 8/3/2015</span>
-        <hr style="border-top: 1pt solid black">
-        <p>Huyndai i20 Active chính thức ra mắt thị trường Việt Nam</p>
-        <span>Tin tức chung, 8/3/2015</span>
-        <hr style="border-top: 1pt solid black">
+        <hr style="border-top: 1pt solid #a6aaab">
     </div>
 </div>
 <div class="clearfix"></div>
 <div class="container config_gr">
-    <span>Dịch vụ chăm sóc, bán hàng chuyên nghiệp phục vụ 24/7</span>
+    <span>Dịch vụ chăm sóc, bán hàng chuyên nghiệp phục vụ <strong style="font-size:24pt">24/7</strong></span>
     <div class="row">
-        <div class="config">
+        <div class="config col-xs-4">
             <a href="">
                 <img src="~/Content/img/config_1.png" class="img-responsive">
-                <span class="title_config">Chương trình dịch vụ</span>
+                <span class="title_config">&nbsp;Chương trình dịch vụ</span>
             </a>
         </div>
-        <div class="config">
+        <div class="config col-xs-4">
             <a href="">
                 <img src="~/Content/img/config_2.png" class="img-responsive">
-                <span class="title_config">Chính sách bảo hành</span>
+                <span class="title_config">&nbsp;Chính sách bảo hành</span>
             </a>
         </div>
-        <div class="config">
+        <div class="config col-xs-4">
             <a href="">
                 <img src="~/Content/img/config_3.png" class="img-responsive">
-                <span class="title_config">Phụ tùng & phụ kiện</span>
+                <span class="title_config">&nbsp;Phụ tùng & phụ kiện</span>
             </a>
         </div>
     </div>
     <p>Hyundai Bắc Ninh  .Tổ 54, Tp.Bắc Ninh, </p>
-    <hr style="border-top: 1pt solid black">
+    <hr style="border-top: 1pt solid #a6aaab">
 </div>
 <div class="clearfix"></div>

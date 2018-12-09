@@ -157,6 +157,8 @@
     <Content Include="Content\img\listpage-active.png" />
     <Content Include="Content\img\logo.png" />
     <Content Include="Content\img\next.png" />
+    <Content Include="Content\img\pr-next.png" />
+    <Content Include="Content\img\pr-pre.png" />
     <Content Include="Content\img\pre.png" />
     <Content Include="Content\img\santaFe.png" />
     <Content Include="Content\img\santaFe_copy.png" />

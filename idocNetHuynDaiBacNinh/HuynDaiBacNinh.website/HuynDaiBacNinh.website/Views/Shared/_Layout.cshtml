@@ -52,6 +52,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" onclick="showMenu()" data-target="">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
     </div>
     <div class="navbar-collapse col-xs-12 col-md-12 menu " aria-expanded="false" id="menuMain">
         <div class="navbar">
@@ -65,37 +71,36 @@
                         <ul class="dropdown-menu" role="menu">
                             <li>
                                 <a href="">
-                                    Chính sách bảo hành
+                                    <h5>Chính sách bảo hành</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <h5>Phụ tùng &amp; phụ kiện</h5>
                                 </a>
 
                             </li>
                             <li>
                                 <a href="">
-                                    Phụ tùng &amp; phụ kiện
+                                    <h5>Bảo dưỡng định kỳ</h5>
                                 </a>
 
                             </li>
                             <li>
                                 <a href="">
-                                    Bảo dưỡng định kỳ
+                                    <h5>Chăm sóc khách hàng</h5>
                                 </a>
 
                             </li>
                             <li>
                                 <a href="">
-                                    Chăm sóc khách hàng
+                                    <h5>Cứu hộ giao thông</h5>
                                 </a>
 
                             </li>
                             <li>
                                 <a href="">
-                                    Cứu hộ giao thông
-                                </a>
-
-                            </li>
-                            <li>
-                                <a href="">
-                                    Hyundai Membership
+                                    <h5>Hyundai Membership</h5>
                                 </a>
 
                             </li>
@@ -106,25 +111,25 @@
                         <ul class="dropdown-menu" role="menu">
                             <li>
                                 <a href="">
-                                    Bảng giá
+                                    <h5>Bảng giá</h5>
                                 </a>
 
                             </li>
                             <li>
                                 <a href="">
-                                    Dự toán chi phí
+                                    <h5>Dự toán chi phí</h5>
                                 </a>
 
                             </li>
                             <li>
                                 <a href="">
-                                    Hỗ trợ trả góp
+                                    <h5>Hỗ trợ trả góp</h5>
                                 </a>
 
                             </li>
                             <li>
                                 <a href="">
-                                    Hướng dẫn thủ tục
+                                    <h5> Hướng dẫn thủ tục</h5>
                                 </a>
 
                             </li>
@@ -137,13 +142,23 @@
                     <li class="dropdown">
                         <a href="" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Tin tức</a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="">Tin đại lý</a></li>
-                            <li><a href="">Tin tức xe Hyundai</a></li>
-                            <li><a href="">Tin khuyến mại</a></li>
-                            <li><a href="">Công nghệ xe Hyundai</a></li>
-                            <li><a href="">Kỹ thuật &amp; tư vấn xe</a></li>
-                            <li><a href="">Đánh giá xe</a></li>
-                            <li><a href="">Tuyển dụng</a></li>
+                            <li><a href="">
+                                    <h5>Tin đại lý</h5>
+                                </a></li>
+                            <li><a href="">
+                                    <h5>Tin tức xe Hyundai</h5>
+                                </a></li>
+                            <li><a href="">
+                                    <h5>Tin khuyến mại</h5>
+                                </a></li>
+                            <li><a href="">
+                                    <h5>Công nghệ xe Hyundai</h5>
+                                </a></li>
+                            <li><a href="">
+                                    <h5>Kỹ thuật &amp; tư vấn xe</h5>
+                                </a></li>
+                            <li><a href=""><h5>Đánh giá xe</h5></a></li>
+                            <li><a href=""><h5>Tuyển dụng</h5></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -151,25 +166,25 @@
                         <ul class="dropdown-menu" role="menu">
                             <li>
                                 <a href="">
-                                    Chính sách & Quy định
+                                    <h5>Chính sách & Quy định</h5>
                                 </a>
 
                             </li>
                             <li>
                                 <a href="">
-                                    Giới thiệu chung
+                                    <h5>Giới thiệu chung</h5>
                                 </a>
 
                             </li>
                             <li>
                                 <a href="">
-                                    Thư ngỏ
+                                    <h5>Thư ngỏ</h5>
                                 </a>
 
                             </li>
                             <li>
                                 <a href="">
-                                    Cơ cấu tổ chức
+                                    <h5>Cơ cấu tổ chức</h5>
                                 </a>
 
                             </li>
@@ -505,30 +520,30 @@
     <div class="clearfix"></div>
     <div class="">
         @RenderBody()
-        <hr />
+        
     </div>
-    <div class="footer_top container">
-        <div class="item_footer">
+    <div class="footer_top container modernhbold">
+        <div class="item_footer col-xs-3 col-md-3">
             <p>Sản phẩm</p>
             <a href="">Xe du lịch</a><br>
             <a href="">Xe thể thao đa dụng và tải nhẹ</a><br>
             <a href="">Xe chuyên dụng</a><br>
         </div>
-        <div class="item_footer">
+        <div class="item_footer col-xs-3 col-md-3">
             <p>Dịch vụ</p>
             <a href="">Chương trình dịch vụ</a><br>
             <a href="">Chính sách bảo hành</a><br>
             <a href="">Phụ tùng & phụ kiện</a><br>
             <a href="">Chăm sóc khách hàng</a><br>
         </div>
-        <div class="item_footer">
+        <div class="item_footer col-xs-3 col-md-3">
             <p>Tin tức</p>
             <a href="">Tin tức chung</a><br>
             <a href="">Tin đại lý</a><br>
             <a href="">Tin khuyến mại</a><br>
             <a href="">Tuyển dụng</a><br>
         </div>
-        <div class="item_footer">
+        <div class="item_footer col-xs-3 col-md-3">
             <p>Kinh nghiệm lái xe</p>
             <a href="">Hướng dẫn</a><br>
             <a href="">Kỹ năng cần biết</a><br>
@@ -539,10 +554,10 @@
     </div>
 
     <div class="item_mobile_footer container">
-        <a href="">Sản phẩm</a>
-        <a href="">Dịch vụ</a>
-        <a href="">Tin tức</a>
-        <a href="">Kinh nghiệm lái xe</a>
+        <a href="" class="col-xs-3 col-md-3">Sản phẩm</a>
+        <a href="" class="col-xs-3 col-md-3">Dịch vụ</a>
+        <a href="" class="col-xs-3 col-md-3">Tin tức</a>
+        <a href="" class="col-xs-3 col-md-3">Kinh nghiệm lái xe</a>
     </div>
 
     <div class="clearfix"></div>
