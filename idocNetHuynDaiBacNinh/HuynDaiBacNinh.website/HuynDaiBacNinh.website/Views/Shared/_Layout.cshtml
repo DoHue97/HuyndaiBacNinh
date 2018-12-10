@@ -25,6 +25,16 @@
 <header></header>
 <body>
     <!-- header -->
+    <div class="header-menu">
+        <span id="hot-line-copy" style="font-size: 15pt;color: red;font-weight: bold;float:left">0987 654 321</span>
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" @*onclick="showMenu()"*@ data-target="#menuMain">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
     <div class="header-top">
         <div class="container">
             <div class="logo col-xs-6">
@@ -44,22 +54,8 @@
         </div>
     </div>
     <!-- menu -->
-    <div class="header-menu">
-        <span id="hot-line-copy" style="font-size: 15pt;color: red;font-weight: bold;float:left">0987 654 321</span>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" onclick="showMenu()" data-target="">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" onclick="showMenu()" data-target="">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-    </div>
-    <div class="navbar-collapse col-xs-12 col-md-12 menu " aria-expanded="false" id="menuMain">
+
+    <div class="navbar-collapse menuMain collapse" aria-expanded="false" id="menuMain">
         <div class="navbar">
             <div class=" container clearfix">
                 <ul class="nav navbar-nav">
@@ -67,7 +63,7 @@
                         <a href="javascript:;" class="menu-pr" onclick="showmenu(true)">Sản phẩm</a>
                     </li>
                     <li class="dropdown">
-                        <a href="" class="test dropdown-toggle" data-toggle="collapse" aria-expanded="false">Dịch vụ</a>
+                        <a href="" class="test dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dịch vụ</a>
                         <ul class="dropdown-menu" role="menu">
                             <li>
                                 <a href="">
@@ -107,7 +103,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Mua xe</a>
+                        <a href="" class="test dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Mua xe</a>
                         <ul class="dropdown-menu" role="menu">
                             <li>
                                 <a href="">
@@ -140,29 +136,39 @@
                         <a href="">Đăng ký lái thử</a>
                     </li>
                     <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Tin tức</a>
+                        <a href="" class="test dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Tin tức</a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="">
+                            <li>
+                                <a href="">
                                     <h5>Tin đại lý</h5>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <h5>Tin tức xe Hyundai</h5>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <h5>Tin khuyến mại</h5>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <h5>Công nghệ xe Hyundai</h5>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <h5>Kỹ thuật &amp; tư vấn xe</h5>
-                                </a></li>
+                                </a>
+                            </li>
                             <li><a href=""><h5>Đánh giá xe</h5></a></li>
                             <li><a href=""><h5>Tuyển dụng</h5></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Về chúng tôi</a>
+                        <a href="" class="test dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Về chúng tôi</a>
                         <ul class="dropdown-menu" role="menu">
                             <li>
                                 <a href="">
@@ -233,7 +239,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/grand-i10">
-                            <img src="~/Content/img/grandi10.png" class="img-product-popup col-centered" alt="Grand i10">
+                            <img src="~/Content/img/grandi10.png" class="img-product-popup col-centered img-responsive" alt="Grand i10">
                             <div class="carname" style="text-align: center">Grand i10</div>
                         </a>
 
@@ -241,7 +247,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/grand-i10-sedan">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Grand i10 sedan">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Grand i10 sedan">
                             <div class="carname" style="text-align: center">Grand i10 sedan</div>
                         </a>
 
@@ -249,7 +255,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/accent-2018">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Accent 2018">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Accent 2018">
                             <div class="carname" style="text-align: center">Accent 2018</div>
                         </a>
 
@@ -257,7 +263,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/elantra">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Elantra">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Elantra">
                             <div class="carname" style="text-align: center">Elantra</div>
                         </a>
 
@@ -265,7 +271,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/elantra-sport">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Elantra Sport">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Elantra Sport">
                             <div class="carname" style="text-align: center">Elantra Sport</div>
                         </a>
 
@@ -273,7 +279,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/kona">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Kona">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Kona">
                             <div class="carname" style="text-align: center">Kona</div>
                         </a>
 
@@ -281,7 +287,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/tucson-2017">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Tucson 2017">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Tucson 2017">
                             <div class="carname" style="text-align: center">Tucson 2017</div>
                         </a>
 
@@ -289,7 +295,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/santa-fe">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="SantaFe">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="SantaFe">
                             <div class="carname" style="text-align: center">SantaFe</div>
                         </a>
 
@@ -297,7 +303,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/solati">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Solati">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Solati">
                             <div class="carname" style="text-align: center">Solati</div>
                         </a>
 
@@ -305,7 +311,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/new-porter-150">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="NEW PORTER 150">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="NEW PORTER 150">
                             <div class="carname" style="text-align: center">NEW PORTER 150</div>
                         </a>
 
@@ -313,7 +319,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/new-mighty-n250">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="New Mighty N250">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="New Mighty N250">
                             <div class="carname" style="text-align: center">New Mighty N250</div>
                         </a>
 
@@ -321,7 +327,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/county">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="COUNTY 2017">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="COUNTY 2017">
                             <div class="carname" style="text-align: center">COUNTY 2017</div>
                         </a>
 
@@ -329,7 +335,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/universe">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="universe">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="universe">
                             <div class="carname" style="text-align: center">universe</div>
                         </a>
 
@@ -337,7 +343,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/hd700-1000-dau-keo">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="HD700-1000 Đầu kéo">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="HD700-1000 Đầu kéo">
                             <div class="carname" style="text-align: center">HD700-1000 Đầu kéo</div>
                         </a>
 
@@ -345,7 +351,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/hd270-tu-do">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="HD270 Tự đổ">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="HD270 Tự đổ">
                             <div class="carname" style="text-align: center">HD270 Tự đổ</div>
                         </a>
 
@@ -353,7 +359,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/hd270-tron-be-tong">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="HD270 TRỘN BÊ TÔNG">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="HD270 TRỘN BÊ TÔNG">
                             <div class="carname" style="text-align: center">HD270 TRỘN BÊ TÔNG</div>
                         </a>
 
@@ -361,7 +367,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/hd260-320">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="HD260-320">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="HD260-320">
                             <div class="carname" style="text-align: center">HD260-320</div>
                         </a>
 
@@ -369,7 +375,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/hd210">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="HD210">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="HD210">
                             <div class="carname" style="text-align: center">HD210</div>
                         </a>
 
@@ -377,7 +383,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/tucson">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Tucson 2016">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Tucson 2016">
                             <div class="carname" style="text-align: center">Tucson 2016</div>
                         </a>
 
@@ -385,7 +391,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/accent">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Accent">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Accent">
                             <div class="carname" style="text-align: center">Accent</div>
                         </a>
 
@@ -393,7 +399,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/accent-5-cua">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Accent 5 cửa">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Accent 5 cửa">
                             <div class="carname" style="text-align: center">Accent 5 cửa</div>
                         </a>
 
@@ -401,7 +407,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/i20-active">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="i20 Active">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="i20 Active">
                             <div class="carname" style="text-align: center">i20 Active</div>
                         </a>
 
@@ -409,7 +415,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/sonata">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Sonata">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Sonata">
                             <div class="carname" style="text-align: center">Sonata</div>
                         </a>
 
@@ -417,7 +423,7 @@
                     <div class="col-sm-3 col-xs-6 product-popup">
 
                         <a href="/vi/san-pham/creta">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Creta">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Creta">
                             <div class="carname" style="text-align: center">Creta</div>
                         </a>
 
@@ -426,55 +432,55 @@
                 <div id="1" class="tab-pane fade in">
                     <div class="col-sm-3 col-xs-6  product-popup">
                         <a href="/vi/san-pham/grand-i10">
-                            <img src="~/Content/img/grandi10.png" class="img-product-popup col-centered" alt="Grand i10">
+                            <img src="~/Content/img/grandi10.png" class="img-product-popup col-centered img-responsive" alt="Grand i10">
                             <div class="carname" style="text-align: center">Grand i10</div>
                         </a>
                     </div>
                     <div class="col-sm-3 col-xs-6  product-popup">
                         <a href="/vi/san-pham/grand-i10-sedan">
-                            <img src="~/Content/img/grandi10.png" class="img-product-popup col-centered" alt="Grand i10 sedan">
+                            <img src="~/Content/img/grandi10.png" class="img-product-popup col-centered img-responsive" alt="Grand i10 sedan">
                             <div class="carname" style="text-align: center">Grand i10 sedan</div>
                         </a>
                     </div>
                     <div class="col-sm-3 col-xs-6  product-popup">
                         <a href="/vi/san-pham/accent-2018">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Accent 2018">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Accent 2018">
                             <div class="carname" style="text-align: center">Accent 2018</div>
                         </a>
                     </div>
                     <div class="col-sm-3 col-xs-6  product-popup">
                         <a href="/vi/san-pham/elantra">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Elantra">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Elantra">
                             <div class="carname" style="text-align: center">Elantra</div>
                         </a>
                     </div>
                     <div class="col-sm-3 col-xs-6  product-popup">
                         <a href="/vi/san-pham/elantra-sport">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Elantra Sport">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Elantra Sport">
                             <div class="carname" style="text-align: center">Elantra Sport</div>
                         </a>
                     </div>
                     <div class="col-sm-3 col-xs-6  product-popup">
                         <a href="/vi/san-pham/accent">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Accent">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Accent">
                             <div class="carname" style="text-align: center">Accent</div>
                         </a>
                     </div>
                     <div class="col-sm-3 col-xs-6  product-popup">
                         <a href="/vi/san-pham/accent-5-cua">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Accent 5 cửa">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Accent 5 cửa">
                             <div class="carname" style="text-align: center">Accent 5 cửa</div>
                         </a>
                     </div>
                     <div class="col-sm-3 col-xs-6  product-popup">
                         <a href="/vi/san-pham/i20-active">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="i20 Active">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="i20 Active">
                             <div class="carname" style="text-align: center">i20 Active</div>
                         </a>
                     </div>
                     <div class="col-sm-3 col-xs-6  product-popup">
                         <a href="/vi/san-pham/sonata">
-                            <img src="~/Content/img/sonata.png" class="img-product-popup col-centered" alt="Sonata">
+                            <img src="~/Content/img/sonata.png" class="img-product-popup col-centered img-responsive" alt="Sonata">
                             <div class="carname" style="text-align: center">Sonata</div>
                         </a>
                     </div>
@@ -482,31 +488,31 @@
                 <div id="2" class="tab-pane fade in">
                     <div class="col-sm-3 col-xs-6  product-popup">
                         <a href="/vi/san-pham/kona">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Kona">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Kona">
                             <div class="carname" style="text-align: center">Kona</div>
                         </a>
                     </div>
                     <div class="col-sm-3 col-xs-6  product-popup">
                         <a href="/vi/san-pham/tucson-2017">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Tucson 2017">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Tucson 2017">
                             <div class="carname" style="text-align: center">Tucson 2017</div>
                         </a>
                     </div>
                     <div class="col-sm-3 col-xs-6  product-popup">
                         <a href="/vi/san-pham/santa-fe">
-                            <img src="~/Content/img/santaFe.png" class="img-product-popup col-centered" alt="SantaFe">
+                            <img src="~/Content/img/santaFe.png" class="img-product-popup col-centered img-responsive" alt="SantaFe">
                             <div class="carname" style="text-align: center">SantaFe</div>
                         </a>
                     </div>
                     <div class="col-sm-3 col-xs-6  product-popup">
                         <a href="/vi/san-pham/tucson">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Tucson 2016">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Tucson 2016">
                             <div class="carname" style="text-align: center">Tucson 2016</div>
                         </a>
                     </div>
                     <div class="col-sm-3 col-xs-6  product-popup">
                         <a href="/vi/san-pham/creta">
-                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered" alt="Creta">
+                            <img src="~/Content/img/avante.png" class="img-product-popup col-centered img-responsive" alt="Creta">
                             <div class="carname" style="text-align: center">Creta</div>
                         </a>
                     </div>
@@ -520,7 +526,7 @@
     <div class="clearfix"></div>
     <div class="">
         @RenderBody()
-        
+
     </div>
     <div class="footer_top container modernhbold">
         <div class="item_footer col-xs-3 col-md-3">
@@ -568,7 +574,7 @@
     </footer>
 
     <script type="text/javascript">
-        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        /* Toggle between adding and removing the "responsive" class to menu when the user clicks on the icon */
         function showMenu() {
             var x = document.getElementById("menuMain");
             if (x.className === "menu") {
@@ -615,9 +621,9 @@
         });
     </script>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)*@
 
 </body>
 </html>
