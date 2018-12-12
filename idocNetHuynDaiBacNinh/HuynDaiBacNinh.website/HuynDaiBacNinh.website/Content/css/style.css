@@ -21,7 +21,7 @@ body {
 }
 
 .header-top {
-    background-color: #ecf0f1;
+    /*background-color: #ecf0f1;*/
 }
 
     .header-top .container {
@@ -38,37 +38,48 @@ body {
         font-weight: bold;
         font-family:ModernHBold;
     }
-
+    
     #hot-line-copy {
-    display: none;
-}
+        display: none;
+    }
+
 /*menuMain*/
-.menuMain .navbar .nav{
-    margin-left:200px;
+.menuMain .navbar {
+    border-bottom: 1px solid gray;
 }
+.menuMain .navbar .nav {
+    margin-left: 200px;
+}
+
 .menuMain .navbar ul li a{
     font-family:ModernHBold;
-    font-size:12pt;
+    font-size:13.5pt;
     text-decoration:none;
     color:black;
     text-transform:uppercase;
 }
 @media screen and (min-width:1024px){
     /*hover dropdown menu item*/
-    .menuMain .navbar{
-        border-bottom:1px solid gray;
+    .menuMain .navbar .container .navbar-nav {
+        position: relative;
+        margin: 0 auto;
+        display: table;
+        float: inherit;
+        margin-bottom: 1px;
     }
     .menuMain .navbar ul li.dropdown:hover .dropdown-menu {
         display: block;
     }
-
-    .menuMain .navbar ul li a:hover {
-        border-bottom: 2px solid #b47744;
+    .menuMain .navbar ul li a {
+        border-bottom: 2px solid transparent;
     }
-
-    .menuMain .navbar ul li.dropdown .dropdown-menu li a {
-        text-transform: inherit;
-    }
+        .menuMain .navbar ul li a:hover {
+            border-bottom: 2px solid #b47744;
+        }
+        
+        .menuMain .navbar ul li.dropdown .dropdown-menu li a {
+                text-transform: inherit;
+            }
 
         .menuMain .navbar ul li.dropdown .dropdown-menu li a:hover {
             background: #e0985d;
@@ -141,46 +152,24 @@ body {
     margin: 30px 0;
     height: 109px;
 }
+
 /*slider*/
 .slider {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.carousel-inner .item {
-    height: 370px;
-}
+/*.carousel-inner .item {
+    height: auto;
+}*/
 
-    .carousel-inner .item img {
-        max-width: 100%;
+   .slider .carousel-inner .item img {
+        width: 100%;
         height: auto;
         position: relative;
-        top: 30%;
     }
-    
-    .slider .note-slider {
-        text-align: left;
-        height: auto;
-    }
-
-.slider .img-slider img {
-    max-width: 150%;
-    max-height: 150%;
-    padding-top: 100px;
-}
-
-.note-slider strong {
-    font-family: ModernHBold;
-    font-size: 45.78pt;
-    color: black;
-}
-
-.note-slider span {
-    
-    font-family: ModernHBold;
-    font-size: 20pt;
-    color: #666666;
-}
+   
+   
 .slider a {
     position: absolute;
     top: 40%;
@@ -202,24 +191,6 @@ body {
     background: url(../img/next.png) no-repeat top left;
 }
 
-.note-slider .btn-detail {
-    color:white;
-    background-color: #1d5fcb;
-    font-size: 14pt;
-    text-align: center;
-    width: 112px;
-    height: 38px;
-    border-bottom: 3px solid #1f4380;
-    font-family:ModernHBold;
-}
-
-.note-slider .detail {
-    max-width: 100%;
-    color: #020202;
-    font-size: 14pt;
-    padding-top: 50px;
-    padding-bottom: 30px;
-}
 
 #mySlider a img {
     height: auto;
@@ -238,7 +209,7 @@ body {
 }
 
 .slider_products, #sliderProducts {
-    max-width: 65%;
+    width: 970px;
     margin: auto;
 }
 
@@ -300,7 +271,7 @@ body {
     }
 /*tin tức*/
 .news {
-    max-width: 70%;
+    width: 970px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -325,21 +296,25 @@ body {
             float: left;
             height: auto;
             padding: 0 10px 10px 20px;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: ModernHEcoLight;
         }
 
         .news .content_news .title_news {
-            font-size: 14pt;
+            font-size: 17pt;
             color: black;
         }
 
         .news .content_news span {
-            font-size: 10pt;
+            font-size: 13pt;
             color: gray;
         }
+            .news .content_news p {
+                font-size: 13pt;
+                color: black;
+            }
 /*config item*/
 .config_gr {
-    width: 70%;
+    width: 970px;
     text-align: -webkit-center;
 }
     .config_gr .row{
@@ -390,13 +365,16 @@ body {
     
 /*footer top*/
 .footer_top {
-    width: 70%;
+    width: 970px;
     padding: 20px;    
 }
 
     .footer_top .item_footer {
         float: left;
         padding: 0;
+    }
+    .footer_top .item_footer a{
+        text-decoration:none;
     }
 
         .footer_top .item_footer p {
@@ -417,7 +395,7 @@ footer {
 }
 
     footer .container {
-        width: 70%;
+        width: 970px;
     }
 
         footer .container p {

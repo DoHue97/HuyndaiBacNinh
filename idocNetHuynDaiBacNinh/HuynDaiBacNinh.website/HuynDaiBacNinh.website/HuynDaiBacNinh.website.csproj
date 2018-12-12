@@ -149,11 +149,17 @@
     <Content Include="Content\img\config_1.png" />
     <Content Include="Content\img\config_2.png" />
     <Content Include="Content\img\config_3.png" />
+    <Content Include="Content\img\dai-ly-3s-hyundai-bac-ninh.png" />
+    <Content Include="Content\img\Email-FBad.jpg" />
     <Content Include="Content\img\grandi10.png" />
     <Content Include="Content\img\hw90712.png" />
+    <Content Include="Content\img\icon-fb.png" />
+    <Content Include="Content\img\icon-google.png" />
+    <Content Include="Content\img\icon-youtube.png" />
     <Content Include="Content\img\icon_1.png" />
     <Content Include="Content\img\icon_2.png" />
     <Content Include="Content\img\icon_3.png" />
+    <Content Include="Content\img\khuyen-mai-dich-vu-cung-hyundai-bac-ninh-don-xuan-ky-hoi.jpg" />
     <Content Include="Content\img\listpage-active.png" />
     <Content Include="Content\img\logo.png" />
     <Content Include="Content\img\next.png" />

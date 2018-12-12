@@ -15,15 +15,32 @@
 .modernhbold {
     font-family: ModernHBold
 }
-
+/*4k*/
+@media only screen and (min-width:2560px){
+   
+    .slider .carousel-inner{
+        height: 914px;
+    }
+     
+}
+@media only screen and (max-width:1440px){
+    .slider .carousel-inner .item {
+        height: 493px;
+    }
+}
 /*laptop*/
 @media only screen and (max-width:1024px){
     /*header-top*/
-
+    .slider .carousel-inner .item {
+        height: 482px;
+    }
     .header-top .icons .hot-line p {
         font-size: 14pt;
         font-weight: bold;
         font-family: ModernHBold;
+    }
+    .slider .carousel-inner .item {
+        height: 340px;
     }
     /*slider banner*/
     #mySlider .controls a.left {
@@ -46,36 +63,10 @@
         padding: 0;
         list-style-type: none;
     }*/
-
-    .note-slider strong {
-        font-family: ModernHBold;
-        font-size: 30pt;
-        color: black;
-    }
-
-    .note-slider span {
-        font-family: ModernHBold;
-        font-size: 15pt;
-        color: white;
-    }
-
-    .note-slider .btn-detail {
-        color: white;
-        background-color: #1d5fcb;
-        font-size: 9pt;
-        text-align: center;
-        width: 80px;
-        height: 30px;
-        border-bottom: 3px solid #1f4380;
-        font-family: ModernHBold;
-    }
-
-    .note-slider .detail {
-        max-width: 100%;
-        color: #020202;
-        font-size: 9pt;
-        padding-top: 0;
-        padding-bottom: 30px;
+   .slider_products .carousel-inner .carousel-inner .item img {
+        width: 100%;
+        height: 74.75px;
+        position: relative;
     }
     /*menu*/
     .menuMain .navbar .nav {
@@ -142,7 +133,6 @@
         text-transform: uppercase;
         font-size: 12pt;
         padding: 5px;
-        text-align: -webkit-center;
     }
 }
 /*tablet*/
@@ -180,7 +170,7 @@
     .header-menu {
         display: none;
         height: 50px;
-        border-bottom: 2pt solid gray;
+        /*border-bottom: 1px solid gray;*/
     }
 
         .header-menu #hot-line-copy {
@@ -191,7 +181,7 @@
 
         .header-menu button {
             display: inline-block !important;
-            border: 1pt solid gray;
+            border: 1pt solid #d6d3d3;
         }
 
             .header-menu button .icon-bar {
@@ -228,10 +218,11 @@
     }
     /*slider banner*/
     .slider {
-        margin-top: 20px;
         margin-bottom: 20px;
     }
-
+        .slider .carousel-inner .item {
+            height: 280px;
+        }
     .carousel-inner .item {
         height: 200px;
     }
@@ -240,8 +231,6 @@
             max-width: 100%;
             height: auto;
             position: relative;
-            top: 10%;
-            padding-top: 50px;
         }
 
     .slider .note-slider {
@@ -438,13 +427,14 @@
             padding: 0;
             float: left;
         }
-
+    footer .container {
+        width: 100%;
+    }
     footer .container p {
         color: white;
         text-transform: uppercase;
         font-size: 10pt;
         padding: 5px;
-        text-align: -webkit-center;
     }
 }
 
@@ -467,6 +457,7 @@
     .header-menu{
         display:block!important;
     }
+    
 /*menu main*/
     /*.navbar-collapse.in {
         overflow-y: inherit;
@@ -541,23 +532,46 @@
             height: auto;
         }
 
-            .slider .carousel-inner .item img {
-                max-width: 300%;
+            /*.slider .carousel-inner .item img {
+                max-width: 100%;
                 height: auto;
                 position: relative;
                 top: 15%;
-            }
+            }*/
 
         .slider .note-slider{
-            display: none;
+            display: block;
+            width:50%;
         }
-        .slider .img-slider{
-            display:block!important;
-        }
-            .slider .img-slider img {
-                width: 300%;
-                height:auto;
+            .slider .note-slider span {
+                display: block;
+                font-size: 6pt;
+                margin-top: -20px;
             }
+            .slider .note-slider strong {
+                display: block;
+                font-size:10pt;
+                padding-top:100%;
+            }
+            .slider .note-slider .detail {
+                display: none;
+            }
+            .slider .note-slider button {
+                display: none;
+            }
+            .slider .img-slider {
+                display: block;
+                width:50%;
+            }
+                .slider .img-slider .banner_img {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom:-20px;
+                }
+                .slider .img-slider .car_img {
+                    width: 100%;
+                    padding-top:100px;
+                }
          
     #mySlider .controls {
         display: none;
@@ -725,12 +739,14 @@
             font-weight: bold;
         }
     /*footer*/
+    footer .container {
+       width:100%;
+    }
     footer .container p {
         color: white;
         text-transform: uppercase;
         font-size: 7pt;
         padding: 5px;
         font-weight: bold;
-        text-align: -webkit-center;
     }
 }
