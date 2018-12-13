@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88D40F85-9CFB-4DE9-9F1C-60406FBFDBF4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HuynDaiBacNinh.website</RootNamespace>
+    <AssemblyName>HuynDaiBacNinh.website</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.0\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\ModernH-Bold.v1.0.css" />
+    <Content Include="Content\css\ModernH-EcoLight.v1.0.css" />
+    <Content Include="Content\css\reset.css" />
+    <Content Include="Content\css\responsive.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\Style_About.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\13907035_1816212918590205_6775440233132209006_n.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\41547341_2191931174384416_1166437573413830656_n.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\46333695_2227610984149768_191279078651723776_n.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\6_dS75DNBC_.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\accent-2018.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\all.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\all.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\avt%281%29.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\avt.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\bootstrap.min.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\bootstrap.min.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\bus_universe-quarter-view-thumb.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\common.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\county.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\dai-ly-3s-hyundai-bac-ninh.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\dashboard.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\docs.min.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\easy-callnow-public.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\easy-callnow-public.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\Elantra-Sport.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\embed.html" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\emojione.min.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\emojione.min.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\EYMI8AhSSBX.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\gallery_img_1.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\gallery_img_2.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\gallery_img_3.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\gallery_img_4.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\gallery_img_5.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\gallery_img_6.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\gallery_img_7.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\gallery_img_8.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\gallery_img_9.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\GRAND-I10-SEDAN.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\H150-P.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\hd260-320.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\hyundai-accent-1.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\hyundai-accent-5-cua.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\hyundai-bac-ninh-km-dich-vu-xuan-2018 %282%29.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\hyundai-creta-1.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\hyundai-elantra2016.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\hyundai-grand-i10-CKD-2017.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\hyundai-sonata 1.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\hyundai-starex-cuu-thuong.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\hyundai-starex-h1.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\hyundai-tucson-2017 %281%29.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\i20-active1.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\icon-contact.svg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\icon-market.svg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\icon-phone.svg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\ie-emulation-modes-warning.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\ie10-viewport-bug-workaround.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\infowindow.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\init_embed.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jasny-bootstrap.min.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery-1.11.0.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery-1.9.1.min.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.bxslider.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.bxslider.min.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.fancybox.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.fancybox.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.tinymce.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.ui.accordion.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.ui.autocomplete.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.ui.button.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.ui.core.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.ui.datepicker.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.ui.dialog.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.ui.progressbar.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.ui.resizable.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.ui.selectable.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.ui.slider.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.ui.tabs.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.ui.theme.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.validate.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jquery.validate.unobtrusive.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jssor.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\jssor.slider.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\khuyen-mai-20-trieu-khi-mua-xe-hyundai-solati-porter-150-va-new-mighty-N250 %282%29.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\khuyen-mai-20-trieu-khi-mua-xe-hyundai-solati-porter-150-va-new-mighty-N250.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\khuyen-mai-dich-vu-he-2018%283%29.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\khuyen-mai-dich-vu-he-2018.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\lai-thu-accent-2018-bao-duong-xe-luu-dong.jpg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\like_box.html" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\logo-footer.svg" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\logo.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\logomb.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\LviKjJ9cymB%281%29.html" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\LviKjJ9cymB.html" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\map.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\maps.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\mighty-250.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\modernizr-2.5.3.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\MU_3rn9UYqw.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\offcanvas.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\onion.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\overlay.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\pace-flash.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\pace.min.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\phone-ring.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\ping%281%29.html" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\ping.html" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\santafe-2016.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\saved_resource%281%29.html" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\saved_resource%282%29.html" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\saved_resource.html" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\search_impl.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\site.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\solati-h350.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\Styles-1.0.1.css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\truck_hd120-quarter-view-thumb.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\truck_tractor-truck-quarter-view-thumb.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\TUCSON.png" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\util.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\WGNOuZpP5gk.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\yRbgOkOeYM9.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\zNst2xhn2Rb.css" />
+    <Content Include="Content\img\avante.png" />
+    <Content Include="Content\img\banner.png" />
+    <Content Include="Content\img\banner_car.png" />
+    <Content Include="Content\img\config_1.png" />
+    <Content Include="Content\img\config_2.png" />
+    <Content Include="Content\img\config_3.png" />
+    <Content Include="Content\img\dai-ly-3s-hyundai-bac-ninh.png" />
+    <Content Include="Content\img\Email-FBad.jpg" />
+    <Content Include="Content\img\grandi10.png" />
+    <Content Include="Content\img\hw90712.png" />
+    <Content Include="Content\img\icon-fb.png" />
+    <Content Include="Content\img\icon-google.png" />
+    <Content Include="Content\img\icon-youtube.png" />
+    <Content Include="Content\img\icon_1.png" />
+    <Content Include="Content\img\icon_2.png" />
+    <Content Include="Content\img\icon_3.png" />
+    <Content Include="Content\img\khuyen-mai-dich-vu-cung-hyundai-bac-ninh-don-xuan-ky-hoi.jpg" />
+    <Content Include="Content\img\listpage-active.png" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\next.png" />
+    <Content Include="Content\img\pr-next.png" />
+    <Content Include="Content\img\pr-pre.png" />
+    <Content Include="Content\img\pre.png" />
+    <Content Include="Content\img\santaFe.png" />
+    <Content Include="Content\img\santaFe_copy.png" />
+    <Content Include="Content\img\sonata.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\ModernH-Bold.v1.0.css" />
+    <Content Include="fonts\ModernH-EcoLight.v1.0.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\all.js%281%29" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\AuthenticationService%281%29.Authenticate" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\AuthenticationService.Authenticate" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\css" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\js" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\js%281%29" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\ViewportInfoService%281%29.GetViewportInfo" />
+    <Content Include="Content\Hyundai An Phú - Đại lý ủy quyền của Hyundai Thành Công_files\ViewportInfoService.GetViewportInfo" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Test.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7647</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:7647/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
